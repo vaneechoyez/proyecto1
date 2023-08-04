@@ -1,0 +1,34 @@
+
+<div class="container">
+   <h1>{{post?.title}}</h1>
+   <p>{{post?.body}} </p>
+
+<hr>
+    <h3>Comentarios del Post</h3>
+    <table class="table">
+
+        <thead>
+           <tr>
+            <th>Nombre</th>
+            <th>Email</th>
+            <th>Comentarios</th>
+           </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor=" let comment of comments">
+             <th>{{comment.name}}</th>
+             <th>{{comment.email}}</th>
+             <th>{{comment.body}}</th>
+            </tr>
+         </tbody>
+
+
+
+
+
+    </table>
+
+
+
+</div>
